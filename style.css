@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* General styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clock display styling */
+#clock {
+    font-size: 200px;
+    margin-top: 200px;
+}
+
+/* Alarm section styling */
+.alarm-section {
+    margin-top: 50px;
+}
+
+.alarm-section input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.alarm-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Alarm message styling */
+#alarmMessage {
+    font-size: 20px;
+    color: red;
+    margin-top: 20px;
+}
