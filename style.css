@@ -30,9 +30,13 @@ cursor: pointer;
 }
 button{
     background-color: gray;
+    border: none;
+        border-radius: 3px;
 }
 input{
     background-color: gray;
+    border: none;
+        border-radius: 3px;
 }
 /* Alarm section styling */
 .alarm-section {
