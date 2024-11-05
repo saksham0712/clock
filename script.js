@@ -42,6 +42,22 @@ function setAlarm() {
     }
 }
 
+// Function to set an alarm based on a selected time interval
+function setQuickAlarm() {
+    const selectedInterval = document.getElementById('quickAlarmOptions').value;
+    if (!selectedInterval) return; // If no option is selected, do nothing
+
+    const now = new Date();
+    now.setMinutes(now.getMinutes() + parseInt(selectedInterval, 10)); // Add the selected minutes
+    let hours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12; // Convert to 12-hour format and use "12" for midnight/noon
+
+    alarmTime = `${String(hours).padStart(2, '0')}:${minutes} ${ampm}`;
+    document.getElementById('alarmMessage').textContent = `Alarm set for ${alarmTime}`;
+}
+
 // Function to clear the alarm
 function clearAlarm() {
     alarmTime = null;

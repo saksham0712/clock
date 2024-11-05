@@ -28,14 +28,24 @@ right: 30px;
 cursor: pointer;
 
 }
+select{
+        padding: 10px 10px;
+            background-color: gray;
+            margin-left: 10px;
+            border: none;
+            border-radius: 3px;
+    font-family: "Orbitron", sans-serif;
+}
 button{
     background-color: gray;
     border: none;
         border-radius: 3px;
+    font-family: "Orbitron", sans-serif;
 }
 input{
     background-color: gray;
     border: none;
+    
         border-radius: 3px;
 }
 /* Alarm section styling */
@@ -44,7 +54,7 @@ input{
 }
 
 .alarm-section input {
-    padding: 10px;
+    padding: 8px;
     font-size: 16px;
 }
 
@@ -52,6 +62,11 @@ input{
     padding: 10px 20px;
     font-size: 16px;
     margin-left: 10px;
+}
+.dropdown {
+    padding: 10px 20px;
+        font-size: 16px;
+        margin-left: 10px;
 }
 
 /* Alarm message styling */

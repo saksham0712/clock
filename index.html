@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock with Alarm</title>
+    <title>Digital Clock</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,19 @@
     <div class="alarm-section">
         <h2>Set Alarm</h2>
         <input type="time" id="alarmTime">
-        <button onclick="setAlarm()">Set Alarm</button>
-        <button onclick="clearAlarm()">Clear Alarm</button>
+
+        <select id="quickAlarmOptions" onchange="setQuickAlarm()">
+            <option value="">Quick Alarm ⏰</option>
+            <option value="5">5 Minutes</option>
+            <option value="10">10 Minutes</option>
+            <option value="30">30 Minutes</option>
+            <option value="60">1 Hour</option>
+            <option value="120">2 Hours</option>
+        </select>
+
+
+        <button onclick="setAlarm()">Set</button>
+        <button onclick="clearAlarm()">Clear</button>
             <svg class="
             fullscreenicon" onclick="toggleFullscreen()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" height="40px"
             width="30px" version="1.1" id="Capa_1" viewBox="0 0 384.97 384.97" xml:space="preserve">
