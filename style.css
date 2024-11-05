@@ -56,3 +56,10 @@ input{
     color: red;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 756px) {
+    #clock {
+        font-size: 100px;
+        margin-top: 200px;
+    }
+}
