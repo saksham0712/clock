@@ -59,3 +59,12 @@ function triggerAlarm() {
         alert("⏰ Alarm ringing!");
     }
 }
+
+// Function to toggle fullscreen mode
+function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
