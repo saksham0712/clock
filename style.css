@@ -8,7 +8,7 @@ body.light-mode {
 
 body.dark-mode {
     background-color: black;
-    color: #ffffff;
+    color: darkgrey;
 }
 /* General styling */
 body {
