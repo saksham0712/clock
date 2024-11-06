@@ -7,7 +7,7 @@ body.light-mode {
 }
 
 body.dark-mode {
-    background-color: #1e1e1e;
+    background-color: black;
     color: #ffffff;
 }
 /* General styling */
