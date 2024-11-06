@@ -84,3 +84,9 @@ function toggleFullscreen() {
         document.exitFullscreen();
     }
 }
+
+// for color mode 
+function toggleDarkMode() {
+    document.body.classList.toggle('light-mode');
+    document.body.classList.toggle('dark-mode');
+}
